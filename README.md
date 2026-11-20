@@ -161,3 +161,15 @@ The reported baseline is an LCNN configuration. XLS-R/AASIST interfaces are prep
 ## Development notes
 
 ECS EC2 GPU provides control over GPU instance capacity, WebSocket behavior, and cost tuning, but requires AMI, autoscaling, patching, and capacity management. SageMaker real-time endpoints provide managed model deployment and autoscaling, but introduce endpoint packaging constraints, per-endpoint cost, and a less direct fit for long-lived bidirectional WebSocket sessions. The checked-in Terraform defaults to parameterized ECS EC2 GPU resources; no AWS resources are created automatically. 
+
+A GPU-Accelerated Voice Deepfake Detection and VoIP-Style Simulation System
+
+Developers
+
+Debosmita Mukhopadhyay
+
+Khushi Kumari
+
+Muthu Amuthan
+
+Amanjeeta Rath
