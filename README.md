@@ -164,7 +164,7 @@ ECS EC2 GPU provides control over GPU instance capacity, WebSocket behavior, and
 
 A GPU-Accelerated Voice Deepfake Detection and VoIP-Style Simulation System
 
-Developers
+## Developers
 
 Debosmita Mukhopadhyay
 
