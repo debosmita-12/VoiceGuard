@@ -23,7 +23,7 @@ The frontend runs on the laptop because Node.js dependencies are not installed o
 ### GPU machine
 
 ```bash
-cd ~/noidea
+cd ~/VoiceGaurd
 source .venv/bin/activate
 python -m pip install -e .
 
@@ -39,7 +39,7 @@ export ALLOWED_ORIGINS=http://localhost:3000
 Copy or clone this repository on the laptop. Only the frontend dependencies are required there:
 
 ```bash
-cd ~/noidea/frontend
+cd ~/VoiceGuard/frontend
 npm install
 ```
 
@@ -50,7 +50,7 @@ The laptop does not need CUDA, PyTorch, Redis, MongoDB, or the model checkpoint.
 ### 1. Start the backend on the GPU machine
 
 ```bash
-cd ~/noidea
+cd ~/VoiceGuard
 source .venv/bin/activate
 ./start.sh
 ```
@@ -71,13 +71,13 @@ curl http://127.0.0.1:8000/readyz
 Run this on the laptop and keep it open:
 
 ```bash
-ssh -N -L 8000:127.0.0.1:8000 muthu@GPU_MACHINE_IP
+ssh -N -L 8000:127.0.0.1:8000 debosmita@GPU_MACHINE_IP
 ```
 
 Or use the launcher:
 
 ```bash
-GPU_SSH_TARGET=muthu@GPU_MACHINE_IP ./start.sh tunnel
+GPU_SSH_TARGET=debosmita@GPU_MACHINE_IP ./start.sh tunnel
 ```
 
 Test the tunnel on the laptop:
@@ -91,7 +91,7 @@ curl http://127.0.0.1:8000/healthz
 In a second laptop terminal:
 
 ```bash
-cd ~/noidea
+cd ~/VoiceGuard
 NEXT_PUBLIC_API_BASE_URL=http://localhost:8000 ./start.sh frontend
 ```
 
